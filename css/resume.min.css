@@ -167,6 +167,111 @@ p.lead {
     border: 3px solid var(--accent-primary);
     box-shadow: 0 0 20px rgba(124, 77, 255, 0.2);
   }
+
+  #sideNav .container-fluid {
+    padding: 0;
+  }
+
+  #sideNav .navbar-collapse {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #sideNav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-secondary);
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1030;
+  }
+
+  #sideNav .navbar-brand {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #sideNav .navbar-brand .img-profile {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    margin-right: 0.5rem;
+  }
+
+  #sideNav .navbar-collapse {
+    background-color: var(--bg-secondary);
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  #sideNav .navbar-collapse .navbar-nav {
+    padding: 0.5rem 0;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item:last-child .nav-link {
+    border-bottom: none;
+  }
+
+  #sideNav .navbar-toggler {
+    margin-right: 1rem;
+    border: 1px solid var(--border-color);
+  }
+
+  #sideNav .navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(124, 77, 255, 0.25);
+  }
+
+  body {
+    padding-top: 4rem;
+    padding-left: 0;
+  }
+
+  section.resume-section {
+    padding: 2rem 1rem !important;
+  }
+
+  section.resume-section:first-of-type h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  section.resume-section:first-of-type .subheading {
+    font-size: 1.25rem;
+  }
+
+  .resume-item {
+    padding: 1.5rem !important;
+  }
+
+  .resume-date {
+    margin-top: 1rem;
+    text-align: left !important;
+  }
+
+  .dev-icons {
+    font-size: 2rem;
+  }
+
+  .social-icons a {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.25rem;
+    line-height: 3rem;
+  }
 }
 
 section.resume-section {
