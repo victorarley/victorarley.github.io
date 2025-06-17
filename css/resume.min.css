@@ -1,5 +1,358 @@
 /*!
- * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
- */body{font-family:JetBrains Mono Regular,Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';padding-top:54px;color:#868e96}@media (min-width:992px){body{padding-top:0;padding-left:17rem}}h1,h2,h3,h4,h5,h6{font-family:JetBrains Mono Regular,'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';font-weight:700;text-transform:uppercase;color:#343a40}h1{font-size:6rem;line-height:5.5rem}h2{font-size:3.5rem}h3{font-size:2rem}p.lead{font-size:1.15rem;font-weight:400}.subheading{text-transform:uppercase;font-weight:500;font-family:JetBrains Mono Regular,'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';font-size:1.5rem}.social-icons a{display:inline-block;height:3.5rem;width:3.5rem;background-color:#495057;color:#fff!important;border-radius:100%;text-align:center;font-size:1.5rem;line-height:3.5rem;margin-right:1rem}.social-icons a:last-child{margin-right:0}.social-icons a:hover{background-color:#126E9F}.dev-icons{font-size:3rem}.dev-icons .list-inline-item i:hover{color:#126E9F}#sideNav .navbar-nav .nav-item .nav-link{font-weight:800;letter-spacing:.05rem;text-transform:uppercase}#sideNav .navbar-toggler:focus{outline-color:#d48a6e}@media (min-width:992px){#sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:17rem;height:100vh}#sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}#sideNav .navbar-brand .img-profile{max-width:10rem;max-height:10rem;}#sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}#sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:100%}#sideNav .navbar-collapse .navbar-nav .nav-item{display:block}#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}}section.resume-section{padding-top:5rem!important;padding-bottom:5rem!important;max-width:75rem}section.resume-section .resume-item .resume-date{min-width:none}@media (min-width:768px){section.resume-section{min-height:100vh}section.resume-section .resume-item .resume-date{min-width:18rem}}@media (min-width:992px){section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}}.bg-primary{background-color:#126E9F!important}.text-primary{color:#126E9F!important}a{color:#126E9F}a:active,a:focus,a:hover{color:#824027}
+ * Modern Dark Theme - Resume
+ * Based on Start Bootstrap - Resume
+ */
+:root {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --accent-primary: #7C4DFF;
+  --accent-secondary: #B388FF;
+  --border-color: #2d2d2d;
+  --sidebar-width: 17rem;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  padding-top: 54px;
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: var(--sidebar-width);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 3rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary) !important;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--accent-primary);
+  transform: translateY(-3px);
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i {
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: var(--accent-primary);
+  transform: scale(1.1);
+}
+
+#sideNav {
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  width: var(--sidebar-width);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+}
+
+#sideNav .navbar-nav {
+  padding-top: 1rem;
+}
+
+#sideNav .navbar-brand {
+  padding: 1.5rem 1rem;
+}
+
+#sideNav .navbar-collapse {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 0;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+#sideNav .navbar-collapse .navbar-nav {
+  flex-direction: column;
+  width: 100%;
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item {
+  display: block;
+}
+
+#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: var(--accent-primary);
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 3px solid var(--accent-primary);
+    box-shadow: 0 0 20px rgba(124, 77, 255, 0.2);
+  }
+}
+
+section.resume-section {
+  min-height: 100vh;
+  width: 100%;
+  max-width: none;
+  background-color: var(--bg-primary);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem !important;
+}
+
+section.resume-section .w-100 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* First section (About) specific styles */
+section.resume-section:first-of-type {
+  padding: 0 2rem !important;
+}
+
+section.resume-section:first-of-type .w-100 {
+  max-width: 800px;
+}
+
+section.resume-section:first-of-type h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+section.resume-section:first-of-type .subheading {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+section.resume-section:first-of-type .social-icons {
+  margin-top: 2rem;
+}
+
+/* Section headings */
+section.resume-section h2 {
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+section.resume-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--accent-primary);
+  border-radius: 2px;
+}
+
+/* Resume items */
+section.resume-section .resume-item {
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+section.resume-section .resume-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills section */
+section.resume-section#skills .dev-icons {
+  margin-top: 2rem;
+}
+
+/* Interests section */
+section.resume-section#interests p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.bg-primary {
+  background-color: var(--accent-primary) !important;
+}
+
+.text-primary {
+  color: var(--accent-primary) !important;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:active, a:focus, a:hover {
+  color: var(--accent-secondary);
+}
+
+hr {
+  border-color: var(--border-color);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-secondary);
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+/* Summary section */
+section.resume-section#summary .summary-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section.resume-section#summary p.lead {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+section.resume-section#summary p.lead:last-child {
+  margin-bottom: 0;
+}
+
+/* Experience section */
+section.resume-section#experience .resume-date {
+  min-width: 200px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+section.resume-section#experience .resume-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+section.resume-section#experience .resume-content {
+  flex: 1;
+}
+
+section.resume-section#experience .resume-date {
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  section.resume-section#experience .resume-item {
+    flex-direction: column;
+  }
+  
+  section.resume-section#experience .resume-date {
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
