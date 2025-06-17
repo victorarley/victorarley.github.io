@@ -15,15 +15,26 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Victor Arley - Software Engineer specializing in Java, Spring Boot, AWS, and Hexagonal Architecture">
+  <meta name="author" content="Victor Arley">
+  <meta name="keywords" content="Software Engineer, Java Developer, Spring Boot, AWS, Backend Developer">
+  <meta property="og:title" content="Victor Arley - Software Engineer">
+  <meta property="og:description" content="Backend Developer with experience in Java, Spring Boot, AWS, and implementing Hexagonal Architecture">
+  <meta property="og:type" content="website">
 
   <title>Victor Arley - Software Engineer</title>
 
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="icon" type="image/png" href="img/favicon.png">
 
-  <link href="js/lazysizes.js" rel="stylesheet">
+  <!-- Preload critical assets -->
+  <link rel="preload" href="vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="css/resume.min.css" as="style">
+  <link rel="preload" href="vendor/fontawesome-free/css/all.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+  
+  <!-- LazySizes for image optimization -->
+  <script src="js/lazysizes.min.js" async></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,8 +51,8 @@
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" role="navigation" aria-label="Main navigation">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top" aria-label="Go to top">
       <span class="d-block d-lg-none">Victor Arley</span>      
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2 lazyload" src="img/profile.jpeg" alt="">
