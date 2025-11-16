@@ -15,20 +15,32 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Victor Arley - Software Engineer specializing in Java, Spring Boot, AWS, and Hexagonal Architecture">
+  <meta name="author" content="Victor Arley">
+  <meta name="keywords" content="Software Engineer, Java Developer, Spring Boot, AWS, Backend Developer">
+  <meta property="og:title" content="Victor Arley - Software Engineer">
+  <meta property="og:description" content="Backend Developer with experience in Java, Spring Boot, AWS, and implementing Hexagonal Architecture">
+  <meta property="og:type" content="website">
 
   <title>Victor Arley - Software Engineer</title>
 
-  <link rel="shortcut icon" href="img/favicon.png"/>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 
-  <link href="js/lazysizes.js" rel="stylesheet">
+  <!-- Preload critical assets -->
+  <link rel="preload" href="vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="css/resume.min.css" as="style">
+  <link rel="preload" href="vendor/fontawesome-free/css/all.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+  
+  <!-- LazySizes for image optimization -->
+  <script src="js/lazysizes.min.js" async></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
@@ -39,11 +51,11 @@
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" role="navigation" aria-label="Main navigation">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top" aria-label="Go to top">
       <span class="d-block d-lg-none">Victor Arley</span>      
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-lg mx-auto mb-2 lazyload" src="img/profile.jpeg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2 lazyload" src="img/profile.jpeg" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +64,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="#about">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#summary">Summary</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
@@ -89,14 +104,23 @@
           </a>
           <a href="https://www.linkedin.com/in/victorarley/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
-          </a>
-          <!--<a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>-->
-          <a href="https://www.facebook.com/victorarley.perezblanco" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
+          </a>          
         </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="summary">
+      <div class="w-100">
+        <h2 class="mb-5">Summary</h2>
+        
+          <p class="lead mb-4">I am a Backend Developer with experience in Java ☕, Spring Boot 🚀, AWS ☁️, and implementing Hexagonal Architecture to build scalable and maintainable solutions. I'm passionate about code quality, design and architecture patterns, and applying Domain-Driven Design (DDD) to deliver high-performance, coherent products. I enjoy collaborating in multidisciplinary teams 🤝, convinced that collective growth enhances results.</p>
+          
+          <p class="lead mb-4">I have participated in microservices-based projects, successfully tackling the challenge of integrating data from multiple sources and normalizing it into a unified format 📊. I am motivated by thinking up innovative solutions and writing clean code that effectively solves problems. Currently, I am exploring Artificial Intelligence in the backend environment 🤖, seeking new ways to add value to every project I take part in.</p>
+
+          <p class="lead mb-4">I am open to new opportunities and collaborations, always willing to learn and grow. Let's talk and build great things together! 🤜🤛</p>
+      
       </div>
     </section>
 
@@ -105,11 +129,42 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
+        
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Senior Backend Engineer</h3>
+            <div class="subheading mb-3"><a href="https://www.globant.com/" target="_blank">Globant</a></div>
+            <p>Working as a Senior Backend Engineer at Openbank through Globant, focusing on banking applications and cloud architecture.</p>
+            <ul>
+              <li>Development and maintenance of banking applications based on microservices.</li>
+              <li>Cloud architecture using AWS services such as Lambda, S3, DynamoDB, and Step Functions.</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2024 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Java Software developer</h3>
+            <div class="subheading mb-3"><a href="https://www.nttdata.com/" target="_blank">NTT-Data</a></div>
+            <p>Starting to work at NTT-Data has been an opportunity for professional growth. I am integrating a great team that allows me to add value and enrich my work. The main technologies I am using are Spring Boot, Docker and REST APIs. Some responsibilities:</p>
+            <ul>
+              <li>Development of new functionalities.</li>
+              <li>Team leadership.</li>
+              <li>Bug resolution.</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2021 - December 2024</span>
+          </div>
+        </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Software developer</h3>
-            <div class="subheading mb-3">Wiemspro</div>
+            <div class="subheading mb-3"><a href="https://wiemspro.com/" target="_blank">Wiemspro</a></div>
             <p>The work at Wiemspro has meant a professional challenge due to the diversity of work that is handled. From desktop applications in Microsoft Visual Studio using Visual Basic, touching mobile applications with Xamarin, sites in Wordpress or using Angular and Spring Framework. The projects have been managed using Subversion. Some projects:</p>
             <ul>
               <li>Maintenance and development of a desktop application developed in Visual Basic .Net using the IDE Visual Studio and MySQL in the management of the database.</li>
@@ -118,14 +173,14 @@
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">July 2018 - Present</span>
+            <span class="text-primary">July 2018 - July 2021</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Computer programmer</h3>
-            <div class="subheading mb-3">ATI Automation and Information Technologies</div>
+            <div class="subheading mb-3"><a href="https://www.unionelectrica.cu/ati/" target="_blank">ATI Automation and Information Technologies</a></div>
             <p>I developed as a programmer and software designer. Mainly work with two technologies, on the one hand Pasal in Delphi and also in the creation of Android applications using the IDE Android Studio. I worked in the maintenance of important modules used by the Cuban Electric Company to monitor and manage the operations in the network in real time. Projects in which I worked:</p>
             <ul>
               <li>Development of android application for the management of service posts and substations of the electric company. This application making use of the GPS and the map is capable of storing the location and all the information of each post and each substation, achieving a high precision in the data. Technologies you use: Android Studio, Java, SQLite, XML, Android SDK, Gradle, Maps, Subversion.</li>
@@ -210,25 +265,10 @@
             <i class="fas fa-database"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-php"></i>
-          </li>          
-          <li class="list-inline-item">
-            <i class="fab fa-android"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
+            <i class="fab fa-docker"></i>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-git"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-linux"></i>
           </li>
         </ul>
      
@@ -239,7 +279,7 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>I feel happy because I work in something that I am passionate about. In addition to a passion for code, I share other interests. Photography helps me to search for new ways of seeing everyday life and to develop my creativity in other areas. Furthermore, I feel a prisoner of curiosity to know new places and people.</p>
+        <p>I feel genuinely happy 😊 because I work on something I'm passionate about: coding 💻. But beyond that, I also have other interests that inspire me. Photography 📸 helps me see everyday life from new perspectives and fuels my creativity in different ways 🎨. On top of that, I'm a curious soul 🌍 — always eager to explore new places 🗺️ and meet new people 🤝. I guess you could say I'm a bit of a prisoner of curiosity.</p>
       </div>
     </section>
 
