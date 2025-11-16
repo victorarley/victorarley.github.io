@@ -15,20 +15,32 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Victor Arley - Software Engineer specializing in Java, Spring Boot, AWS, and Hexagonal Architecture">
+  <meta name="author" content="Victor Arley">
+  <meta name="keywords" content="Software Engineer, Java Developer, Spring Boot, AWS, Backend Developer">
+  <meta property="og:title" content="Victor Arley - Software Engineer">
+  <meta property="og:description" content="Backend Developer with experience in Java, Spring Boot, AWS, and implementing Hexagonal Architecture">
+  <meta property="og:type" content="website">
 
   <title>Victor Arley - Software Engineer</title>
 
-  <link rel="shortcut icon" href="img/favicon.png"/>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 
-  <link href="js/lazysizes.js" rel="stylesheet">
+  <!-- Preload critical assets -->
+  <link rel="preload" href="vendor/bootstrap/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="css/resume.min.css" as="style">
+  <link rel="preload" href="vendor/fontawesome-free/css/all.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+  
+  <!-- LazySizes for image optimization -->
+  <script src="js/lazysizes.min.js" async></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
@@ -39,8 +51,8 @@
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" role="navigation" aria-label="Main navigation">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top" aria-label="Go to top">
       <span class="d-block d-lg-none">Victor Arley</span>      
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2 lazyload" src="img/profile.jpeg" alt="">
@@ -52,7 +64,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="#about">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#summary">Summary</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
@@ -96,10 +111,40 @@
 
     <hr class="m-0">
 
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="summary">
+      <div class="w-100">
+        <h2 class="mb-5">Summary</h2>
+        
+          <p class="lead mb-4">I am a Backend Developer with experience in Java ☕, Spring Boot 🚀, AWS ☁️, and implementing Hexagonal Architecture to build scalable and maintainable solutions. I'm passionate about code quality, design and architecture patterns, and applying Domain-Driven Design (DDD) to deliver high-performance, coherent products. I enjoy collaborating in multidisciplinary teams 🤝, convinced that collective growth enhances results.</p>
+          
+          <p class="lead mb-4">I have participated in microservices-based projects, successfully tackling the challenge of integrating data from multiple sources and normalizing it into a unified format 📊. I am motivated by thinking up innovative solutions and writing clean code that effectively solves problems. Currently, I am exploring Artificial Intelligence in the backend environment 🤖, seeking new ways to add value to every project I take part in.</p>
+
+          <p class="lead mb-4">I am open to new opportunities and collaborations, always willing to learn and grow. Let's talk and build great things together! 🤜🤛</p>
+      
+      </div>
+    </section>
+
+    <hr class="m-0">
+
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
         
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Senior Backend Engineer</h3>
+            <div class="subheading mb-3"><a href="https://www.globant.com/" target="_blank">Globant</a></div>
+            <p>Working as a Senior Backend Engineer at Openbank through Globant, focusing on banking applications and cloud architecture.</p>
+            <ul>
+              <li>Development and maintenance of banking applications based on microservices.</li>
+              <li>Cloud architecture using AWS services such as Lambda, S3, DynamoDB, and Step Functions.</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2024 - Present</span>
+          </div>
+        </div>
+
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Java Software developer</h3>
@@ -112,7 +157,7 @@
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2021 - Present</span>
+            <span class="text-primary">August 2021 - December 2024</span>
           </div>
         </div>
 
@@ -234,7 +279,7 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>I feel happy because I work in something that I am passionate about. In addition to a passion for code, I share other interests. Photography helps me to search for new ways of seeing everyday life and to develop my creativity in other areas. Furthermore, I feel a prisoner of curiosity to know new places and people.</p>
+        <p>I feel genuinely happy 😊 because I work on something I'm passionate about: coding 💻. But beyond that, I also have other interests that inspire me. Photography 📸 helps me see everyday life from new perspectives and fuels my creativity in different ways 🎨. On top of that, I'm a curious soul 🌍 — always eager to explore new places 🗺️ and meet new people 🤝. I guess you could say I'm a bit of a prisoner of curiosity.</p>
       </div>
     </section>
 
